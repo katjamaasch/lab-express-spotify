@@ -1,0 +1,147 @@
+/* SPOTIFY GREEN #00B172
+*/
+
+* {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  font-family: 'Nunito Sans', sans-serif;
+  line-height: 1.5;
+}
+
+nav {
+  box-sizing: border-box;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: -0.5rem;
+  /* @Stefano: why do I have to give the navbar a -0.5 margin to avoid a small space on top of the page?*/
+  height: 5rem;
+  background-color: white;
+  margin-right: auto;
+}
+
+nav > img {
+  display: flex;
+  height: 4rem;
+  margin-top: 0.8rem;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-image: url(/images/spotify-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50rem;
+}
+
+.search-engine {
+  margin-top: 8rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.search-bar {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+}
+
+.entry-field {
+  width: 25rem;
+  height: 3rem;
+  border: none;
+  background-color: rgba(88, 45, 31, 0.39);
+  border-radius: 20px;
+}
+
+::placeholder {
+  color: white;
+  margin-left: 1rem;
+}
+
+.search-button {
+  border-radius: 20px;
+  height: 2.9rem;
+}
+.artists {
+  background-color: #00b172;
+}
+
+.result-dashboard {
+  color: white;
+  padding-top: 7rem;
+}
+
+.search-dashboard-heading {
+  font-weight: 100;
+  font-size: 1.5rem;
+  background-color: white;
+  border-radius: 20px;
+  width: 40rem;
+  color: black;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+.artist-heading {
+  font-weight: 700;
+  font-size: 1.1rem;
+  height: 4rem;
+  width: 300px;
+  margin-top: 4rem;
+  background-color: rgb(52, 58, 64);
+  line-height: 4rem;
+  border-radius: 5px;
+  color: #00b172;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.result-list {
+  padding: 1em;
+  width: 25%;
+}
+
+.single-result-poster {
+  box-sizing: border-box;
+  padding-top: 6rem;
+}
+
+.single-result-poster img {
+  max-width: 100%;
+}
+
+.album-button {
+  width: 300px;
+}
+
+.album-image {
+  margin-bottom: 0.5rem;
+}
+
+/* 
+@Stefano:
+the following classes belong to albums.hbs and tracks.hbs and are not recognized: 
+
+.artist-album-heading {
+  color: #00b172;
+}
+
+
+.track-heading {
+  padding-top: 15rem;
+}
+
+.track-paragraph {
+  margin-top: 2rem;
+}
+
+*/

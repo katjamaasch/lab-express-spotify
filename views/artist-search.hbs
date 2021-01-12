@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="single-result-poster">
+        <h2 class="search-dashboard-heading"> You searched for <i><b>"{{searchQuery}}"</b></i>. Here are your artists:</h2>
+        <div class="row mb-2">
+            {{#each arrayOfArtists}}
+            <div class="col px-5">
+                <h3 class="artist-heading"> {{name}}</h3>
+                <img src="{{images.[0].url}}" onerror="this.src='/images/mic.jpeg'" class="album-image" alt="no image found" width="300px">
+
+                <a href="/albums/{{id}}">
+                    <button type="button" class="btn btn-dark album-button">View Albums</button>
+                </a>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
