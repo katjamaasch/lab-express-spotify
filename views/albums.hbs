@@ -1,17 +1,18 @@
-<div class= "container">
-
+<div class= "container album-container">
+<div class="single-result-poster">
 {{#with albumDetails}}
- <h1>{{[0].artists.[0].name}}'s Albums</h1>
+ <h1 class="album-artist-heading-1">{{[0].artists.[0].name}}'s Albums</h1>
 {{/with}}
 
 <div class="row mb-2">
 {{#each albumDetails}}
 <div class="col px-5">
-<h3 class="artist-album-heading"> {{name}} </h3>
-<p> Released: {{release_date}}</p>
-<img src="{{images.[0].url}}" alt="Album Cover" width="300px">
-<p><a href="/tracks/{{id}}"> <button type="button" class= "btn btn-dark">View Tracks</button></a></p>
+<h3 class="album-artist-heading-2"> {{name}} </h3>
+<p class="release-date"> Released: {{release_date}}</p>
+<img src="{{images.[0].url}}" alt="Album Cover" width="300px" class="album-image">
+<p><a href="/tracks/{{id}}"> <button type="button" class= "btn btn-dark album-button">View Tracks</button></a></p>
 </div>
 {{/each}}
+</div>
 </div>
 </div>

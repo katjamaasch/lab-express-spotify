@@ -17,17 +17,16 @@ nav {
   display: flex;
   flex-direction: row;
   width: 100%;
-  margin-top: -0.5rem;
-  /* @Stefano: why do I have to give the navbar a -0.5 margin to avoid a small space on top of the page?*/
   height: 5rem;
   background-color: white;
   margin-right: auto;
+  z-index: 99;
 }
 
 nav > img {
   display: flex;
   height: 4rem;
-  margin-top: 0.8rem;
+  padding-top: 0.8rem;
 }
 
 .intro {
@@ -60,6 +59,10 @@ nav > img {
   border: none;
   background-color: rgba(88, 45, 31, 0.39);
   border-radius: 20px;
+}
+
+.view-album-button {
+  position: sticky;
 }
 
 ::placeholder {
@@ -119,6 +122,34 @@ nav > img {
   max-width: 100%;
 }
 
+.album-artist-heading-1 {
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+.album-artist-heading-2 {
+  font-weight: 700;
+  font-size: 1.1rem;
+  height: 4rem;
+  width: 300px;
+  margin-top: 4rem;
+  background-color: rgb(52, 58, 64);
+  line-height: 2rem;
+  border-radius: 5px;
+  color: #00b172;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.album-container {
+  padding-top: 6rem;
+}
+
+.release-date {
+  width: 300px;
+  text-align: center;
+}
+
 .album-button {
   width: 300px;
 }
@@ -127,21 +158,10 @@ nav > img {
   margin-bottom: 0.5rem;
 }
 
-/* 
-@Stefano:
-the following classes belong to albums.hbs and tracks.hbs and are not recognized: 
-
-.artist-album-heading {
-  color: #00b172;
-}
-
-
 .track-heading {
-  padding-top: 15rem;
+  margin-bottom: 2rem;
 }
 
 .track-paragraph {
   margin-top: 2rem;
 }
-
-*/
